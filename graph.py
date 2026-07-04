@@ -25,3 +25,7 @@ z = [1,2,3,4,0.5]
 veh_type = ['bicycle', 'motorcycle', 'car', 'van', 'stroller']
 plt.pie(z, labels=veh_type)
 plt.show()
+
+plt.pie(z)
+plt.legend(veh_type, loc='best')
+plt.show()
