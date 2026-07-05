@@ -52,3 +52,16 @@ pearsonr_coefficient, p_value = pearsonr(mpg, wt)
 
 print("PearsonR Correlation Coefficient: %0.3f" % pearsonr_coefficient)
 print("P-value: %0.3f" % p_value)
+
+corr = x.corr()
+print(corr)
+
+corr = x.corr()
+print(corr)
+
+sns.heatmap(
+    corr,
+    xticklabels=corr.columns.values,
+    yticklabels=corr.columns.values
+)
+plt.show()
