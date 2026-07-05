@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 from pandas import Series, DataFrame
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 import scipy
 from scipy import stats
@@ -33,3 +35,6 @@ print(cars.median(numeric_only=True))
 print(cars.mean(numeric_only=True))
 print(cars.std(numeric_only=True))
 print(cars.describe())
+
+x = cars[['mpg','cyl','qsec','wt']]
+sns.pairplot(cars)
